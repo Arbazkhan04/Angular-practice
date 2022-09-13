@@ -1,0 +1,8 @@
+<!-- interpolation and property binding  -->
+<h1>Pony Racer</h1>
+<h2 [textContent]="user.name">welcome </h2>
+<option [selected]="isPonySelected" value="Rainbow Dash" >Rainbow Dash</option>
+<p [style.color]="foreground" >hi</p>
+<!-- evnets -->
+<button (click)="onButtonclick($event)" > click me</button>
+<app-register></app-register>
