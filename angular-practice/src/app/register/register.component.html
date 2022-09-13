@@ -3,12 +3,17 @@
     <div class="form-group">
       <label for="exampleInputEmail1">Name:</label>
       <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name" formControlName="userName">
+      <br>
+      <span style="color:red" *ngIf="userName && userName.invalid && userName.touched">field is required</span>
+      <br>
      
     </div>
     <div class="form-group">
       <label for="exampleInputPassword1">Password:</label>
       <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" formControlName="userPassword">
+      <br>
+      <span style="color:red" *ngIf="userPassword && userPassword.invalid && userPassword.touched">field is required</span>
+      <br>
     </div>
-    
-    <button type="submit" class="btn btn-outline-primary w-100">Submit</button>
+    <button (click)="toastr2()" [disabled]="login.invalid" type="submit" class="btn btn-outline-primary w-100">Submit</button>
   </form>
