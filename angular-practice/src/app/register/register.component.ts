@@ -38,7 +38,8 @@ export class RegisterComponent implements OnInit {
 
   }
   toastr2(){
-    this.toastr.success('Hello world!', 'Toastr fun!');
+    if(this.login.valid)
+    this.toastr.success('You have login successfully');
   }
 
 }

@@ -1,0 +1,6 @@
+<div *ngIf="races.length>0">
+    <h1>Races</h1>
+    <ul [ngStyle]="{'color':race.name==='khan'? 'green':'red'}" *ngFor="let race of races">
+        <li > welcome Dude {{race.name}}</li>
+    </ul>
+</div>

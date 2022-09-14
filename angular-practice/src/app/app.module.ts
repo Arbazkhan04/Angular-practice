@@ -7,11 +7,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RegisterComponent } from './register/register.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { StructuralComponent } from './structural/structural.component';
+import { EmployeeRecordComponent } from './employee-record/employee-record.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RegisterComponent
+    RegisterComponent,
+    StructuralComponent,
+    EmployeeRecordComponent
   ],
   imports: [
     BrowserModule,

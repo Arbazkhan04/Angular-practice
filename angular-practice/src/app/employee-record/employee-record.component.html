@@ -1,0 +1,23 @@
+<p>employee-record works!</p>
+ <button class="btn btn-outline-primary" (click)="recievedInfo1FromDetailService()">FirstEmployeeDetails</button>
+ <ul>
+  
+  <li *ngFor="let info of recievedInfo1 ">{{info}}</li>
+ </ul>   
+ <button class="btn btn-outline-primary" (click)="recievedInfo2FromDetailsService()">SecondEmployeeDetails</button>
+ <ul>
+  
+  <li *ngFor="let info of recievedInfo2 ">{{info}}</li>
+ </ul>   
+ <button class="btn btn-outline-primary" (click)="recievedInfo3FromDetailsService()">ThirdEmployeeDetails</button>
+ <ul>
+  
+  <li *ngFor="let info of recievedInfo3 ">{{info}}</li>
+ </ul>
+ <button class="btn btn-outline-primary" (click)="recievedInfo4FromDetailsService()">FourthEmployeeRecord</button>
+ <ul>
+    <li *ngFor="let info of recievedInfo4">{{info}}</li>
+ </ul>   
+ <!-- <button class="btn btn-outline-primary">SecondEmployeeDetails</button>   
+ <button class="btn btn-outline-primary">ThirdEmployeeDetails</button>    -->
+
