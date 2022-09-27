@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup,Validator, Validators} from '@angular/forms';
 import { ToastrService } from 'ngx-toastr';
@@ -18,15 +19,27 @@ export class RegisterComponent implements OnInit {
   register()
   {
     console.log(this.login.value)
+    const post= this.login.value;
+    this.http.post('https://angular-httpmodule-5c891-default-rtdb.firebaseio.com/posts.json',post).subscribe(Response=>{
+     console.log(Response);
+     
+    })
     
   }
  
   
-  constructor( private toastr:ToastrService) { 
+  constructor( private toastr:ToastrService,private http:HttpClient) { 
     
   }
 
   ngOnInit(): void {
+    
+     const post= this.login.value;
+     this.http.post('https://angular-httpmodule-5c891-default-rtdb.firebaseio.com/posts.json',post).subscribe(Response=>{
+      console.log(Response);
+      
+     })
+
   }
   get userName()
   {
@@ -41,5 +54,7 @@ export class RegisterComponent implements OnInit {
     if(this.login.valid)
     this.toastr.success('You have login successfully');
   }
+
+
 
 }

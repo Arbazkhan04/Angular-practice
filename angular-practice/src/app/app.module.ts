@@ -9,7 +9,7 @@ import { RegisterComponent } from './register/register.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { StructuralComponent } from './structural/structural.component';
 import { EmployeeRecordComponent } from './employee-record/employee-record.component';
-
+import {HttpClientModule} from '@angular/common/http'
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +23,8 @@ import { EmployeeRecordComponent } from './employee-record/employee-record.compo
     ReactiveFormsModule,
     FormsModule,
     ToastrModule.forRoot(),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
     
 
 
