@@ -15,6 +15,7 @@ export class RegisterComponent implements OnInit {
   login=new FormGroup({
     userName:new FormControl('',[Validators.required]),
     userPassword:new FormControl('',[Validators.required]),
+    userUniqueKey:new FormControl('',[Validators.required])
   })
   register()
   {
@@ -37,7 +38,7 @@ export class RegisterComponent implements OnInit {
      const post= this.login.value;
      this.http.post('https://angular-httpmodule-5c891-default-rtdb.firebaseio.com/posts.json',post).subscribe(Response=>{
       console.log(Response);
-      
+      // we need to subscibe this http.post method because this is an observable 
      })
 
   }

@@ -9,13 +9,17 @@ import { RegisterComponent } from './register/register.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { StructuralComponent } from './structural/structural.component';
 import { EmployeeRecordComponent } from './employee-record/employee-record.component';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { OperatorComponent } from './operator/operator.component';
+import { ChildComponent } from './operator/child/child.component'
 @NgModule({
   declarations: [
     AppComponent,
     RegisterComponent,
     StructuralComponent,
-    EmployeeRecordComponent
+    EmployeeRecordComponent,
+    OperatorComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
