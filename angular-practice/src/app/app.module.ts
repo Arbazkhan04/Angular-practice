@@ -11,7 +11,8 @@ import { StructuralComponent } from './structural/structural.component';
 import { EmployeeRecordComponent } from './employee-record/employee-record.component';
 import {HttpClientModule} from '@angular/common/http';
 import { OperatorComponent } from './operator/operator.component';
-import { ChildComponent } from './operator/child/child.component'
+import { ChildComponent } from './operator/child/child.component';
+import { UsersComponent } from './users/users.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +20,8 @@ import { ChildComponent } from './operator/child/child.component'
     StructuralComponent,
     EmployeeRecordComponent,
     OperatorComponent,
-    ChildComponent
+    ChildComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,
