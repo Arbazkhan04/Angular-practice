@@ -12,7 +12,8 @@ import { EmployeeRecordComponent } from './employee-record/employee-record.compo
 import {HttpClientModule} from '@angular/common/http';
 import { OperatorComponent } from './operator/operator.component';
 import { ChildComponent } from './operator/child/child.component';
-import { UsersComponent } from './users/users.component'
+import { UsersComponent } from './users/users.component';
+import { LoginComponent } from './login/login/login.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,8 @@ import { UsersComponent } from './users/users.component'
     EmployeeRecordComponent,
     OperatorComponent,
     ChildComponent,
-    UsersComponent
+    UsersComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
